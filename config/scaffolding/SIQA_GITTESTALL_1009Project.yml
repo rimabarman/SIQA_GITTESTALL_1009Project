@@ -414,14 +414,6 @@ services:
     version: "1.0"
   - name: SIQACloudStreamsTests
     version: "1.0"
-- serviceName: GB_1:readGlobalvariable
-  packages:
-  - name: DADA_GlobalVariable1
-    version: "1.0"
-- serviceName: pub.globalVariable:getGlobalVariable
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2064
 - serviceName: SIQAJDBCAdapterTests.adapterServices:getData
   packages:
   - name: SIQAJDBCAdapterTests
