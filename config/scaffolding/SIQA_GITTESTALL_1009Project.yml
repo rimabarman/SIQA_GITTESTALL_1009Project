@@ -40,6 +40,11 @@ packages:
   gitUrl: https://github.com/prabhakarsag
   gitUsername: rimabarman
   gitBranch: main
+- name: SSL_JDBC_Test
+  gitServerName: rimaSCName
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: rimabarman
+  gitBranch: main
 services:
 - serviceName: project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
