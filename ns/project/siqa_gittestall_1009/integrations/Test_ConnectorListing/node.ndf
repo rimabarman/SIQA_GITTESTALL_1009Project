@@ -46,35 +46,11 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Rima.Barman@ibm.com</value>
-    <value name="lastModifiedDate">1757497269169</value>
+    <value name="lastModifiedDate">1757497374842</value>
     <value name="displayName">Test_ConnectorListing</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
-        <null name="name"/>
-        <value name="itemType">PACKAGES</value>
-        <record name="serviceInfo" javaclass="com.wm.util.Values">
-          <value name="groupDisplayName">DADA_GlobalVariable1</value>
-          <value name="groupName">DADA_GlobalVariable1;1.0</value>
-          <null name="services"/>
-        </record>
-        <Boolean name="isProjectPackage">false</Boolean>
-        <record name="serviceName" javaclass="com.wm.util.Values">
-          <value name="description">GB_1:readGlobalvariable</value>
-          <value name="serviceName">GB_1:readGlobalvariable</value>
-          <value name="displayName">readGlobalvariable</value>
-        </record>
-        <null name="outputMapSet"/>
-        <null name="mapSet"/>
-        <number name="ui_step_index" type="Long">1</number>
-        <value name="nodePathNew">0</value>
-        <number name="nodeIndex" type="Long">0</number>
-        <number name="lineNumberForDebug" type="Long">1</number>
-        <Boolean name="xmlMapsetSupported">true</Boolean>
-        <Boolean name="serviceReferenceResolved">true</Boolean>
-        <value name="nodePathForDebug">0</value>
-      </record>
-      <record name="/1" javaclass="com.wm.util.Values">
         <null name="name"/>
         <value name="itemType">PACKAGES</value>
         <record name="serviceInfo" javaclass="com.wm.util.Values">
@@ -91,7 +67,7 @@
         <null name="outputMapSet"/>
         <null name="mapSet"/>
       </record>
-      <record name="/2" javaclass="com.wm.util.Values">
+      <record name="/1" javaclass="com.wm.util.Values">
         <null name="name"/>
         <value name="itemType">PACKAGES</value>
         <record name="serviceInfo" javaclass="com.wm.util.Values">
