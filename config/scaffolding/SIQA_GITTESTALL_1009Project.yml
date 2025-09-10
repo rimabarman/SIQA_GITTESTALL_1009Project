@@ -202,7 +202,7 @@ services:
     version: "1.0"
   - name: SIQACloudStreamsTests
     version: "1.0"
-- serviceName: project.siqa_gittestall_1009.integrations:JMS_JNDI_SSL
+- serviceName: project.siqa_gittestall_1009.integrations:JMSFlowTest
   packages:
   - name: SIQA_GITTESTALL_1009Project
     version: "1.0"
@@ -234,6 +234,30 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2064
+- serviceName: project.siqa_gittestall_1009.integrations:JMS_JNDI_SSL
+  packages:
+  - name: SIQA_GITTESTALL_1009Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_gittestall_1009.integrations:SIQAAdapterFlow
   packages:
   - name: SIQA_GITTESTALL_1009Project
