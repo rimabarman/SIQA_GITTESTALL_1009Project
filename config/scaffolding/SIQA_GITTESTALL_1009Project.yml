@@ -230,6 +230,28 @@ services:
   packages:
   - name: TPP_services_in_FCS
     version: "1.0"
+- serviceName: project.siqa_gittestall_1009.integrations:SchemaValidateDAF
+  packages:
+  - name: SIQA_GITTESTALL_1009Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: pub.schema:validate
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2064
 - serviceName: project.siqa_gittestall_1009.integrations:deepclonetest
   packages:
   - name: SIQA_GITTESTALL_1009Project
