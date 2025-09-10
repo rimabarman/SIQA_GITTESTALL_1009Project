@@ -30,6 +30,7 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: SIQA_OriginTest_OnPremAssets
+  version: "1.0"
   gitServerName: rimaSCName
   gitUrl: https://github.com/vijetadixit
   gitUsername: rimabarman
@@ -49,6 +50,8 @@ services:
     wpmRegistry: licensed
   - name: WmSalesforceProvider
     version: 10.7.0.0.66
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
   - name: SIQACloudStreamsTests
     version: "1.0"
 - serviceName: project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
@@ -65,6 +68,8 @@ services:
     wpmRegistry: licensed
   - name: WmSalesforceProvider
     version: 10.7.0.0.66
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
   - name: SIQACloudStreamsTests
     version: "1.0"
 - serviceName: project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:Test_DB
@@ -81,6 +86,8 @@ services:
     wpmRegistry: licensed
   - name: WmSalesforceProvider
     version: 10.7.0.0.66
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
   - name: SIQACloudStreamsTests
     version: "1.0"
 - serviceName: project.siqa_gittestall_1009.integrations:AlertsCRTandERT
@@ -97,6 +104,8 @@ services:
     wpmRegistry: licensed
   - name: WmSalesforceProvider
     version: 10.7.0.0.66
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
   - name: SIQACloudStreamsTests
     version: "1.0"
 - serviceName: pub.alert:emit
@@ -117,8 +126,36 @@ services:
     wpmRegistry: licensed
   - name: WmSalesforceProvider
     version: 10.7.0.0.66
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
   - name: SIQACloudStreamsTests
     version: "1.0"
+- serviceName: project.siqa_gittestall_1009.integrations:SIQA_E2E_Mon_Test
+  packages:
+  - name: SIQA_GITTESTALL_1009Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2064
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2064
 - serviceName: project.siqa_gittestall_1009.integrations:SIQA_ThirdPPEdgeFS
   packages:
   - name: SIQA_GITTESTALL_1009Project
@@ -133,6 +170,8 @@ services:
     wpmRegistry: licensed
   - name: WmSalesforceProvider
     version: 10.7.0.0.66
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
   - name: SIQACloudStreamsTests
     version: "1.0"
 - serviceName: Basics_1:ComplexFS
@@ -144,10 +183,6 @@ services:
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
 - serviceName: pub.math:divideInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2064
-- serviceName: pub.math:addInts
   packages:
   - name: WmPublic
     version: 11.1.0.0.2064
@@ -209,6 +244,8 @@ services:
     wpmRegistry: licensed
   - name: WmSalesforceProvider
     version: 10.7.0.0.66
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
   - name: SIQACloudStreamsTests
     version: "1.0"
 - serviceName: pub.string:stringToBytes
@@ -219,54 +256,50 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2064
-- serviceName: pub.string:bytesToString
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2064
 configurationVariables:
-  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
-  : "false"
-  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
-  : ""
-  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
-  : MySQL
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
   : loginTimeout=60;driverType=thin;
-  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
-  : "0"
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
   : "1000"
-  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
-  : com.mysql.cj.jdbc.MysqlDataSource
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
   : 9.46.196.248
+  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : MYSQL_DATABASE
+  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : Test_driver
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
   : "3306"
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
   : "10"
-  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
-  : "0"
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
+  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MySQL
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
-  : "1"
-  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : siqatest
-  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
-  : tcp
-  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
-  : "false"
-  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
-  : MYSQL_DATABASE
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
   : ""
   ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
   : "10"
-  ? artConnection.SIQA_GITTESTALL_1009Project.project.siqa_gittestall_1009.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
-  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
