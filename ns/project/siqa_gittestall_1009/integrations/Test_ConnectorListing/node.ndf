@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Rima.Barman@ibm.com</value>
-    <value name="lastModifiedDate">1757495166221</value>
+    <value name="lastModifiedDate">1757497269169</value>
     <value name="displayName">Test_ConnectorListing</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -71,6 +71,42 @@
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
         <Boolean name="xmlMapsetSupported">true</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">SIQAJDBCAdapterTests</value>
+          <value name="groupName">SIQAJDBCAdapterTests;1.0</value>
+          <null name="services"/>
+        </record>
+        <Boolean name="isProjectPackage">false</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">SIQAJDBCAdapterTests.adapterServices:getData</value>
+          <value name="serviceName">SIQAJDBCAdapterTests.adapterServices:getData</value>
+          <value name="displayName">getData</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+      </record>
+      <record name="/2" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">SIQACloudStreamsTests</value>
+          <value name="groupName">SIQACloudStreamsTests;1.0</value>
+          <null name="services"/>
+        </record>
+        <Boolean name="isProjectPackage">false</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">SIQACloudStreamsTests:connetorOperations</value>
+          <value name="serviceName">SIQACloudStreamsTests:connetorOperations</value>
+          <value name="displayName">connetorOperations</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
       </record>
     </record>
   </record>

@@ -91,4 +91,12 @@
   <COMMENT></COMMENT>
 </MAP>
 </INVOKE>
+
+<INVOKE NAME="SIQAJDBCAdapterTests" SERVICE="SIQAJDBCAdapterTests.adapterServices:getData">
+  <COMMENT></COMMENT>
+</INVOKE>
+
+<INVOKE NAME="SIQACloudStreamsTests" SERVICE="SIQACloudStreamsTests:connetorOperations">
+  <COMMENT></COMMENT>
+</INVOKE>
 </FLOW>
